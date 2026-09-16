@@ -46,6 +46,7 @@ void Menu::run() {
                 break;
             default:
                 cout << "Invalid choice, try again." << endl;
+                
         }
     }
 }
@@ -106,3 +107,4 @@ void Menu::handleDeleteTransaction() {
     }
 }
 // bug - when takes character input goes in infinite loop
+//bug  - in add transaction when we debit (having current amount ==0) it still logs the transaction , it should have  had given an error
