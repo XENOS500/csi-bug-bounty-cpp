@@ -19,6 +19,6 @@ private:
     void handleViewHistory();
     void handleViewStats();
     void handleDeleteTransaction();
-}
+};
 
 #endif
