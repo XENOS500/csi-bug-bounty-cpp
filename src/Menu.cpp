@@ -61,7 +61,7 @@ void Menu::handleAddTransaction() {
     cin >> amount;
     cin.ignore();
 
-    if (amount = 0) {
+    if (amount ==0) {
         cout << "Amount cannot be zero." << endl;
         return;
     }
