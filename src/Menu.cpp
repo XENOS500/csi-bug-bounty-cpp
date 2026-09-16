@@ -20,7 +20,7 @@ void Menu::showMainMenu() {
 }
 
 void Menu::run() {
-    int choice = 0;
+    char choice = 0;
     bool exitRequested = false;
 
     while (!exitRequested) {
@@ -28,19 +28,19 @@ void Menu::run() {
         cin >> choice;
 
         switch (choice) {
-            case 1:
+            case '1':
                 handleViewHistory();
                 break;
-            case 2:
+            case '2':
                 handleAddTransaction();
                 break;
-            case 3:
+            case '3':
                 handleViewStats();
                 break;
-            case 4:
+            case '4':
                 handleDeleteTransaction();
                 break;
-            case 5:
+            case '5':
                 cout << "Exiting wallet. Goodbye!" << endl;
                 exitRequested = true;
                 break;
@@ -105,3 +105,4 @@ void Menu::handleDeleteTransaction() {
         cout << "Transaction ID not found." << endl;
     }
 }
+// bug - when takes character input goes in infinite loop
